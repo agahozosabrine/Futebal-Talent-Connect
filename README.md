@@ -201,10 +201,10 @@ Certificate issued, HTTPS confirmed working in the browser.
 
 ## 🔍 Checking Everything Works
 
-- [ ] Site reachable at http://104.46.221.42
-- [ ] Site reachable at https://futebol.ddns.net *(update once DNS and HTTPS are confirmed)*
-- [ ] HTTPS padlock shows no certificate warnings
-- [ ] Site displays correctly on both desktop and mobile
+- [x] Site reachable at http://104.46.221.42
+- [x] Site reachable at https://futebol.ddns.net *(update once DNS and HTTPS are confirmed)*
+- [x] HTTPS padlock shows no certificate warnings
+- [x] Site displays correctly on both desktop and mobile
 
 ---
 
