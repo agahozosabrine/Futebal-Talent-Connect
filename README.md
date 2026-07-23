@@ -83,15 +83,18 @@ I also opened three ports on the Network Security Group so the server would actu
 - Port 80 for regular web traffic
 - Port 443 reserved for secure web traffic once HTTPS is added
 
-![Azure VM list](images/azure-vm-list.png)
+<img width="971" height="716" alt="Screenshot 2026-07-20 at 11 30 51" src="https://github.com/user-attachments/assets/a6b4d777-56a4-47fd-9c51-92ca4db13a63" />
+
 
 My server listed as Running in the Azure dashboard.
 
-![Azure VM overview](images/azure-vm-overview.png)
+<img width="1454" height="539" alt="Screenshot 2026-07-20 at 11 30 17" src="https://github.com/user-attachments/assets/7c390b4c-c315-499b-b943-7163b14d2603" />
+
 
 Overview page confirming the OS, IP address, and resource group.
 
-![Azure VM properties](images/azure-vm-properties.png)
+<img width="971" height="716" alt="Screenshot 2026-07-20 at 11 30 51" src="https://github.com/user-attachments/assets/49eef142-72e8-401b-ab5a-3f2e08bcec91" />
+
 
 Full properties view showing networking and image details.
 
