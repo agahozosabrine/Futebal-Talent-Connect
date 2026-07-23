@@ -198,6 +198,28 @@ sudo certbot --apache -d futebol.ddns.net
 Certificate issued, HTTPS confirmed working in the browser.
 
 
+---
+
+## 📜 Scripting Component
+
+To meet the interactive scripting requirements of the project, the platform utilizes custom client side JavaScript (`assets/js/main.js` / inline scripts) to process user interactions, handle dynamic filtering, and manage web applications dynamically in the browser.
+
+### 💡 Script Functionality & Implementation
+1. **Dynamic Content Filtering:**
+   * **Purpose:** Allows scouts and users to filter player profiles by position (e.g., Forward, Midfielder, Defender), location and age group in realtime.
+   * **Implementation:** Uses JavaScript Event Listeners (`addEventListener('change', ...)`) and DOM manipulation to re render player cards dynamically without reloading the server page.
+
+2. **Form Validation & Data Handling:**
+   * **Purpose:** Validates input data on player registration and contact forms prior to submission.
+   * **Implementation:** Verifies email formatting, checks required field parameters, and provides immediate visual feedback/error handling directly in the browser DOM.
+
+### 📸 Verifiable Output
+* **Real time DOM Updates:** JavaScript dynamically updates element class lists and DOM nodes upon filter execution.
+* **Console Verification:** Open the browser Developer Tools (`F12` -> Console) on `https://futebol.ddns.net/players.html` to view active JS event logs during search and filter operations.
+
+
+
+---
 
 ## 🔍 Checking Everything Works
 
