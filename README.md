@@ -21,6 +21,7 @@ A self built, self hosted website. No drag and drop builders, no managed platfor
 | **Server Name** | agahozo |
 | **Login User** | azureuser |
 | **Public IP** | 104.46.221.42 |
+| **Domain** | [futebol.ddns.net](https://futebol.ddns.net) |
 | **Repository** | [agahozosabrine/Futebal-Talent-Connect](https://github.com/agahozosabrine/Futebal-Talent-Connect) |
 
 ---
