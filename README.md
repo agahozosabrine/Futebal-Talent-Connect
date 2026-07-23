@@ -186,34 +186,12 @@ sudo certbot --apache -d futebol.ddns.net
 <img width="572" height="378" alt="Screenshot 2026-07-23 at 17 08 36" src="https://github.com/user-attachments/assets/57d24b6a-e17e-406d-aa05-3df7855a2c98" />
 
 
-<img width="1270" height="806" alt="Screenshot 2026-07-23 at 17 24 51" src="https://github.com/user-attachments/assets/cc0f464f-e79e-4f5f-9901-204e58671875" />
+<img width="1218" height="842" alt="Screenshot 2026-07-23 at 17 32 04" src="https://github.com/user-attachments/assets/bca8ca7f-b1fc-41a1-84eb-78175c3a4c24" />
+
 
 Certificate issued, HTTPS confirmed working in the browser.
 
----
 
-## 🛠️ Custom Script
-
-I wrote a bash script called `health-check.sh` that pulls together several standard Linux checks into a single readable report, rather than typing each command separately every time I want to check on the server.
-
-It reports on:
-- Server uptime
-- Disk usage
-- Memory usage
-- Whether Apache2 is currently running
-- The size and file count of the website folder at `/var/www/html`
-- The five most recent entries in the Apache access log
-
-The individual commands it wraps (`df`, `free`, `uptime`, `systemctl`, `du`, `tail`) are standard Linux tools covered in the unit labs. What makes this script mine is combining them into one formatted report specific to this server, so a single command gives a full snapshot instead of running five or six separate ones.
-
-The script itself is included in this repository as `health-check.sh`.
-
-
-<img width="1280" height="938" alt="WhatsApp Image 2026-07-23 at 17 16 39" src="https://github.com/user-attachments/assets/31fe4151-da5b-486e-8879-e45a144c7ee8" />
-
-
-
----
 
 ## 🔍 Checking Everything Works
 
