@@ -124,8 +124,8 @@ sudo apt update && sudo apt upgrade -y
 ```
 
 **Screenshots to add here:**
-5. `apt-update.png` — output of the update command
-6. `apt-upgrade.png` — output of the full update and upgrade sequence
+5. `apt-update.png`  output of the update command
+6. `apt-upgrade.png`  output of the full update and upgrade sequence
 
 ![apt update](images/apt-update.png)
 
@@ -146,7 +146,7 @@ sudo apt install apache2 -y
 ```
 
 **Screenshot to add here:**
-7. `apache-install.png` — confirmation that Apache2 installed (or was already current)
+7. `apache-install.png`  confirmation that Apache2 installed (or was already current)
 
 ![Apache install](images/apache-install.png)
 
@@ -159,7 +159,7 @@ sudo systemctl status apache2
 ```
 
 **Screenshot to add here:**
-8. `apache-status.png` — status output showing "active (running)"
+8. `apache-status.png` status output showing "active (running)"
 
 ![Apache status](images/apache-status.png)
 
@@ -171,13 +171,13 @@ Before adding anything custom, I loaded `http://104.46.221.42` in a browser to m
 
 ## 4️⃣ Stage 4  Getting a Domain Name
 
-*(fill in your actual provider once confirmed — e.g. No-IP or DuckDNS)*
+* No-IP *
 
 I registered the hostname futebol.ddns.net and pointed it at my server's IP address, 104.46.221.42. Once the DNS record had propagated, the domain loaded the same content as the raw IP address.
 
 **Screenshots to add here:**
-9. `dns-config.png` — your dynamic DNS provider's dashboard showing the hostname mapped to 104.46.221.42
-10. `domain-resolving.png` — futebol.ddns.net loading successfully in a browser
+9. `dns-config.png`  your dynamic DNS provider's dashboard showing the hostname mapped to 104.46.221.42
+10. `domain-resolving.png`  futebol.ddns.net loading successfully in a browser
 
 ```markdown
 ![DNS configuration](images/dns-config.png)
@@ -199,8 +199,8 @@ sudo certbot --apache -d futebol.ddns.net
 ```
 
 **Screenshots to add here:**
-11. `certbot-output.png` — Certbot confirming the certificate was issued
-12. `https-padlock.png` — the browser showing a secure padlock on the domain
+11. `certbot-output.png`  Certbot confirming the certificate was issued
+12. `https-padlock.png`  the browser showing a secure padlock on the domain
 
 ```markdown
 ![Certbot output](images/certbot-output.png)
@@ -215,7 +215,7 @@ Certificate issued, HTTPS confirmed working in the browser.
 *(describe your script here: what problem it solves, what it does, and whether any part of it was adapted from a lab exercise or an online source — credit that source here)*
 
 **Screenshot to add here:**
-13. `script-output.png` — the script running with visible output
+13. `script-output.png` the script running with visible output
 
 ```markdown
 ![Script output](images/script-output.png)
@@ -225,7 +225,6 @@ Certificate issued, HTTPS confirmed working in the browser.
 
 ## 🔍 Checking Everything Works
 
-- [x] Site reachable at http://104.46.221.42
 - [ ] Site reachable at https://futebol.ddns.net *(update once DNS and HTTPS are confirmed)*
 - [ ] HTTPS padlock shows no certificate warnings
 - [ ] Site displays correctly on both desktop and mobile
@@ -234,15 +233,15 @@ Certificate issued, HTTPS confirmed working in the browser.
 
 ## 📅 Build Log
 
-- 18 June 2026 — server created on Azure
-- 19 June 2026 — first update pass completed, SSH access confirmed
-- 18 July 2026 — Apache2 installed and confirmed running
-- 20 July 2026 — documentation written up, screenshots added
+- 18 June 2026  server created on Azure
+- 19 June 2026  first update pass completed, SSH access confirmed
+- 18 July 2026  Apache2 installed and confirmed running
+- 20 July 2026  documentation written up, screenshots added
 
 ---
 
 Author: Agahozo Sabrine, Student Number 35764065
-Built on Microsoft Azure using Ubuntu 22.04, Apache2, dynamic DNS, and SSH-only administration.
+Built on Microsoft Azure using Ubuntu 22.04, Apache2, dynamic DNS, and SSH only administration.
 
 ## 📄 License
 
