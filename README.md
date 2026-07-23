@@ -6,7 +6,7 @@
 ![Server](https://img.shields.io/badge/server-Apache2-D22128)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-A self-built, self-hosted website — no drag-and-drop builders, no managed platforms. Just a virtual machine, a terminal, and SSH.
+A self built, self hosted website no drag and drop builders, no managed platforms. Just a virtual machine, a terminal, and SSH.
 
 🔗 **Live site:** [futebol.ddns.net](https://futebol.ddns.net) · **Backup by IP:** [104.46.221.42](http://104.46.221.42)
 🎥 **Video walkthrough:** *(link to be added once recorded)*
@@ -33,7 +33,7 @@ This repository and its contents were built and documented independently by Agah
 
 ## 🚀 What This Project Is
 
-I set out to host a working website on a server I configured myself, rather than relying on a website builder like Wix or a managed platform like WordPress.com. Everything below — the virtual machine, the updates, the web server, and the domain — was set up by hand over SSH, with no graphical desktop and no pre-installed content management system.
+I set out to host a working website on a server I configured myself, rather than relying on a website builder like Wix or a managed platform like WordPress.com. Everything below  the virtual machine, the updates, the web server, and the domain  was set up by hand over SSH, with no graphical desktop and no pre installed content management system.
 
 **The stack:**
 
@@ -51,10 +51,10 @@ I set out to host a working website on a server I configured myself, rather than
 
 ## 🖥️ What's On the Site
 
-**Futebol** connects talented football players and coaches with opportunities they might otherwise never have access to. The idea is simple: talent isn't rare, but exposure is — plenty of skilled players and coaches are held back not by ability but by not knowing the right people or having a platform to be seen. This site aims to close that gap by giving them a place to be discovered.
+**Futebol** connects talented football players and coaches with opportunities they might otherwise never have access to. The idea is simple: talent isn't rare, but exposure is  plenty of skilled players and coaches are held back not by ability but by not knowing the right people or having a platform to be seen. This site aims to close that gap by giving them a place to be discovered.
 
 - All content is served out of `/var/www/html/` on the server.
-- *(add any specific pages/features here — e.g. player profiles, sign-up form, listings — once you're ready to describe them in more detail)*
+- *(add any specific pages/features here e.g. player profiles, sign-up form, listings  once you're ready to describe them in more detail)*
 
 ---
 
@@ -64,11 +64,11 @@ I set out to host a working website on a server I configured myself, rather than
 - A computer with a terminal capable of running SSH commands
 - Your website files ready to go, or a plan for building them directly on the server
 
-Note: I did not have a domain name lined up before starting — that came later, once the server was already reachable by IP. Details are under Stage 4 below.
+Note: I did not have a domain name lined up before starting  that came later, once the server was already reachable by IP. Details are under Stage 4 below.
 
 ---
 
-## 1️⃣ Stage 1 — Setting Up the Virtual Machine
+## 1️⃣ Stage 1  Setting Up the Virtual Machine
 
 I logged into the Azure portal and provisioned a new virtual machine using these settings:
 
@@ -102,7 +102,7 @@ Full properties view showing networking and image details.
 
 ---
 
-## 2️⃣ Stage 2 — Logging In and Updating Everything
+## 2️⃣ Stage 2  Logging In and Updating Everything
 
 I connected to the server using:
 
@@ -137,7 +137,7 @@ Full upgrade cycle, confirming the system was current.
 
 ---
 
-## 3️⃣ Stage 3 — Getting Apache2 Running
+## 3️⃣ Stage 3  Getting Apache2 Running
 
 Installed the web server:
 
@@ -169,7 +169,7 @@ Before adding anything custom, I loaded `http://104.46.221.42` in a browser to m
 
 ---
 
-## 4️⃣ Stage 4 — Getting a Domain Name
+## 4️⃣ Stage 4  Getting a Domain Name
 
 *(fill in your actual provider once confirmed — e.g. No-IP or DuckDNS)*
 
@@ -191,7 +191,7 @@ The domain loading correctly in a browser.
 
 ---
 
-## 5️⃣ Stage 5 — Adding HTTPS
+## 5️⃣ Stage 5  Adding HTTPS
 
 ```bash
 sudo apt install certbot python3-certbot-apache -y
@@ -246,4 +246,4 @@ Built on Microsoft Azure using Ubuntu 22.04, Apache2, dynamic DNS, and SSH-only 
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file in this repository for the full text. In short: anyone is free to use, copy, modify, and share this code, provided the original license and copyright notice are included.
+This project is licensed under the **MIT License** see the [LICENSE](LICENSE) file in this repository for the full text. In short: anyone is free to use, copy, modify, and share this code, provided the original license and copyright notice are included.
