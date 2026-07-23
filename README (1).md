@@ -174,7 +174,8 @@ Apache2 confirmed active and running.
 
 3. **Confirm the server is publicly reachable** by loading `http://104.46.221.42` in a browser — not just checking that it works locally. If everything is set up correctly, you'll be greeted by the default **Apache2 Ubuntu Default Page**, confirming the server is fully serving web traffic before any custom files are added.
 
-<img width="800" alt="Apache2 default page screenshot" src="PASTE-YOUR-SCREENSHOT-URL-HERE" />
+<img width="1011" height="595" alt="Screenshot 2026-07-23 at 20 32 04" src="https://github.com/user-attachments/assets/5869fa3d-2416-4987-b959-a4402fe24053" />
+
 
 Default Apache2 Ubuntu page, confirming the server was live before I uploaded my own site.
 
