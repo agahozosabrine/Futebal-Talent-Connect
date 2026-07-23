@@ -204,7 +204,8 @@ Once propagation was complete, `futebol.ddns.net` loaded the exact same content 
 
 My No-IP dashboard, showing futebol.ddns.net pointed at my server.
 
-<img width="1270" height="806" alt="Screenshot 2026-07-23 at 17 24 51" src="https://github.com/user-attachments/assets/559efd13-12e4-4b4f-8da7-4cae14428f7c" />
+<img width="1470" height="956" alt="Screenshot 2026-07-24 at 01 49 12" src="https://github.com/user-attachments/assets/dc95e9c0-6a4e-4d76-8dd3-0bb3c67699d4" />
+
 
 The domain loading correctly in a browser.
 
@@ -244,7 +245,8 @@ sudo certbot renew --dry-run
 
 Installing Certbot and requesting the certificate.
 
-<img width="1218" height="842" alt="Screenshot 2026-07-23 at 17 32 04" src="https://github.com/user-attachments/assets/bca8ca7f-b1fc-41a1-84eb-78175c3a4c24" />
+<img width="1470" height="956" alt="Screenshot 2026-07-24 at 01 48 59" src="https://github.com/user-attachments/assets/1fa17392-e064-4247-aaaa-af14513e50db" />
+
 
 Certificate issued, HTTPS confirmed working in the browser.
 
