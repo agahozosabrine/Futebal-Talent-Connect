@@ -1,4 +1,4 @@
-# ⚽ Futebol: ICT171 Cloud Server Project
+ ⚽ Futebol: ICT171 Cloud Server Project
 
 ![Status](https://img.shields.io/badge/status-live-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Azure-0078D4)
@@ -141,6 +141,11 @@ sudo apt install apache2 -y
 ```
 
 <img width="1439" height="163" alt="Screenshot 2026-07-23 at 17 04 48" src="https://github.com/user-attachments/assets/41076da7-b0d9-46ff-a95f-0419a712a5b6" />
+
+# Check Apache status
+sudo systemctl status apache2
+
+<img width="564" height="353" alt="Screenshot 2026-07-23 at 17 39 24" src="https://github.com/user-attachments/assets/e4dec985-5a18-487c-a8d7-8a8c4fa4cdbb" />
 
 
 Apache2 install confirmation.
