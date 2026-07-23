@@ -83,7 +83,8 @@ I also opened three ports on the Network Security Group so the server would actu
 - Port 80 for regular web traffic
 - Port 443 reserved for secure web traffic once HTTPS is added
 
-<img width="971" height="716" alt="Screenshot 2026-07-20 at 11 30 51" src="https://github.com/user-attachments/assets/a6b4d777-56a4-47fd-9c51-92ca4db13a63" />
+<img width="936" height="326" alt="Screenshot 2026-07-23 at 16 56 52" src="https://github.com/user-attachments/assets/f667ac12-805e-4b90-aba5-91b4fcb9c08e" />
+
 
 
 My server listed as Running in the Azure dashboard.
@@ -108,7 +109,8 @@ I connected to the server using:
 ssh azureuser@104.46.221.42
 ```
 
-![SSH login](images/ssh-login.png)
+<img width="623" height="523" alt="Screenshot 2026-07-23 at 16 58 24" src="https://github.com/user-attachments/assets/b7dd78af-61ca-4843-ac8c-df7d13b1cefb" />
+
 
 Terminal session confirming a successful SSH connection.
 
@@ -118,11 +120,13 @@ With access confirmed, I brought the whole system up to date before touching any
 sudo apt update && sudo apt upgrade -y
 ```
 
-![apt update](images/apt-update.png)
+<img width="1470" height="956" alt="Screenshot 2026-07-23 at 17 01 57" src="https://github.com/user-attachments/assets/c62f8935-69eb-4c03-b317-a4117691a6fb" />
+
 
 Refreshing the package index.
 
-![apt upgrade](images/apt-upgrade.png)
+<img width="574" height="208" alt="Screenshot 2026-07-23 at 17 03 20" src="https://github.com/user-attachments/assets/37fcfb32-aed4-4623-8ea3-122c43e267ee" />
+
 
 Full upgrade cycle, confirming the system was current.
 
@@ -136,7 +140,8 @@ Installed the web server:
 sudo apt install apache2 -y
 ```
 
-![Apache install](images/apache-install.png)
+<img width="1439" height="163" alt="Screenshot 2026-07-23 at 17 04 48" src="https://github.com/user-attachments/assets/41076da7-b0d9-46ff-a95f-0419a712a5b6" />
+
 
 Apache2 install confirmation.
 
@@ -146,7 +151,8 @@ Then checked that it was actually running and set to start on boot:
 sudo systemctl status apache2
 ```
 
-![Apache status](images/apache-status.png)
+<img width="640" height="357" alt="Screenshot 2026-07-23 at 17 05 36" src="https://github.com/user-attachments/assets/9d7b9478-c48b-4b7d-b00d-2c02895dba9b" />
+
 
 Apache2 confirmed active and running.
 
@@ -158,14 +164,14 @@ Before adding anything custom, I loaded `http://104.46.221.42` in a browser to m
 
 I registered the hostname futebol.ddns.net through No-IP and pointed it at my server's IP address, 104.46.221.42. Once the DNS record had propagated, the domain loaded the same content as the raw IP address.
 
-```markdown
-![DNS configuration](images/dns-config.png)
-```
+<img width="1158" height="238" alt="Screenshot 2026-07-23 at 17 22 50" src="https://github.com/user-attachments/assets/56558c77-7aa1-44df-82e0-7a97abc808ef" />
+
+
 My No-IP dashboard, showing futebol.ddns.net pointed at my server.
 
-```markdown
-![Domain resolving](images/domain-resolving.png)
-```
+<img width="1270" height="806" alt="Screenshot 2026-07-23 at 17 24 51" src="https://github.com/user-attachments/assets/559efd13-12e4-4b4f-8da7-4cae14428f7c" />
+
+
 The domain loading correctly in a browser.
 
 ---
@@ -177,10 +183,11 @@ sudo apt install certbot python3-certbot-apache -y
 sudo certbot --apache -d futebol.ddns.net
 ```
 
-```markdown
-![Certbot output](images/certbot-output.png)
-![HTTPS padlock](images/https-padlock.png)
-```
+<img width="572" height="378" alt="Screenshot 2026-07-23 at 17 08 36" src="https://github.com/user-attachments/assets/57d24b6a-e17e-406d-aa05-3df7855a2c98" />
+
+
+<img width="1270" height="806" alt="Screenshot 2026-07-23 at 17 24 51" src="https://github.com/user-attachments/assets/cc0f464f-e79e-4f5f-9901-204e58671875" />
+
 Certificate issued, HTTPS confirmed working in the browser.
 
 ---
@@ -201,15 +208,16 @@ The individual commands it wraps (`df`, `free`, `uptime`, `systemctl`, `du`, `ta
 
 The script itself is included in this repository as `health-check.sh`.
 
-```markdown
-![Script output](images/script-output.png)
-```
+
+<img width="1280" height="938" alt="WhatsApp Image 2026-07-23 at 17 16 39" src="https://github.com/user-attachments/assets/31fe4151-da5b-486e-8879-e45a144c7ee8" />
+
+
 
 ---
 
 ## 🔍 Checking Everything Works
 
-- [x] Site reachable at http://104.46.221.42
+- [ ] Site reachable at http://104.46.221.42
 - [ ] Site reachable at https://futebol.ddns.net *(update once DNS and HTTPS are confirmed)*
 - [ ] HTTPS padlock shows no certificate warnings
 - [ ] Site displays correctly on both desktop and mobile
