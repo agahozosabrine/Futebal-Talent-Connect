@@ -9,7 +9,7 @@
 A self built, self hosted website. No drag and drop builders, no managed platforms. Just a virtual machine, a terminal, and SSH.
 
 🔗 **Live site:** [futebol.ddns.net](https://futebol.ddns.net) · **Backup by IP:** [104.46.221.42](http://104.46.221.42)
-🎥 **Video walkthrough:** *(link to be added once recorded )*
+🎥 **Video walkthrough:** [Watch the video walkthrough](https://drive.google.com/file/d/12blQSKnYYs_7z9Zu02u3uxH8XDBnratn/view?usp=sharing)
 
 <br>
 
